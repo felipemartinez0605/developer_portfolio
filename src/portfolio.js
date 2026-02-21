@@ -2,7 +2,7 @@
 
 // Website related settings
 const settings = {
-  isSplash: true, // Change this to false if you don't want Splash screen.
+  isSplash: false, // Change this to false if you don't want Splash screen.
 };
 
 //SEO Related settings
@@ -26,7 +26,8 @@ const greeting = {
     "Senior Full-Stack Engineer with 5+ years of experience building secure, scalable web applications as a Frontend & Backend specialist. I lead end-to-end development for web apps, from system design and implementation to deployment and optimization.",
   resumeLink:
     "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
-  portfolio_repository: "https://github.com/felipemartinez0605/masterPortfolio",
+  portfolio_repository:
+    "https://github.com/felipemartinez0605/developer_portfolio",
   githubProfile: "https://github.com/felipemartinez0605",
   whatsappnumber: "+56 9 2950 8025",
   telegramID: "superfelipeM",
