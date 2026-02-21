@@ -14,7 +14,7 @@ Here are some fun and precise steps to get you started:
 
    - In your terminal, run the following command to clone your fork to your local machine:
      ```
-     git clone https://github.com/YourUsername/masterPortfolio.git
+     git clone https://github.com/YourUsername/developer_portfolio.git
      ```
 
 3. **Switch to the Project Directory** 📁
