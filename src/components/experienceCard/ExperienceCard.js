@@ -103,10 +103,16 @@ class ExperienceCard extends Component {
                   display: "flex",
                   justifyContent: "flex-start",
                   marginTop: 20,
+                  fontWeight: "bold",
                 }}
               >
                 <div className="repo-description" />
                 {experience["description"]}
+              </div>
+              <div className="experience-bullet-container">
+                {experience["bullets"]?.map((bullet, index) => {
+                  return <p index={index}> - {bullet}</p>;
+                })}
               </div>
             </div>
           </div>

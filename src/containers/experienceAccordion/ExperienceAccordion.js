@@ -8,13 +8,14 @@ class ExperienceAccordion extends Component {
     const theme = this.props.theme;
     return (
       <div className="experience-accord">
-        <Accordion>
+        <div>
           {this.props.sections.map((section) => {
             return (
               <Panel
                 className="accord-panel"
                 title={section["title"]}
                 key={section["title"]}
+                expanded={true}
                 overrides={{
                   Header: {
                     style: () => ({
@@ -37,15 +38,20 @@ class ExperienceAccordion extends Component {
                   },
                 }}
               >
-{section["experiences"].map((experience,index) => {
+                {section["experiences"].map((experience, index) => {
                   return (
-                    <ExperienceCard index={index} totalCards={section["experiences"].length} experience={experience} theme={theme} />
+                    <ExperienceCard
+                      index={index}
+                      totalCards={section["experiences"].length}
+                      experience={experience}
+                      theme={theme}
+                    />
                   );
                 })}
               </Panel>
             );
           })}
-        </Accordion>
+        </div>
       </div>
     );
   }
