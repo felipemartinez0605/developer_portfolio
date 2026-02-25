@@ -30,7 +30,7 @@ const greeting = {
     "https://github.com/felipemartinez0605/developer_portfolio",
   githubProfile: "https://github.com/felipemartinez0605",
   whatsappnumber: "+56 9 2950 8025",
-  telegramID: "superfelipeM",
+  telegramID: "@superfelipeM",
 };
 
 const socialMediaLinks = [
@@ -111,6 +111,13 @@ const skills = {
         "⚡ Creating application backend in Node, Express & Flask",
       ],
       softwareSkills: [
+        {
+          skillName: "WordPress",
+          fontAwesomeClassname: "simple-icons:wordpress",
+          style: {
+            color: "#E3211FF",
+          },
+        },
         {
           skillName: "HTML5",
           fontAwesomeClassname: "simple-icons:html5",
@@ -508,7 +515,7 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "animated_Felipe.png",
+    profile_image_path: "animated_felipe.png",
     description:
       "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
   },
@@ -521,19 +528,25 @@ const contactPageData = {
   },
   addressSection: {
     title: "Address",
-    subtitle: "Saratoga Ave, San Jose, CA, USA 95129",
-    locality: "San Jose",
-    country: "USA",
-    region: "California",
-    postalCode: "95129",
-    streetAddress: "Saratoga Avenue",
+    subtitle: "Lazo 1252, 8920102 San Miguel, Región Metropolitana, Chile",
+    locality: "San Miguel",
+    country: "Chile",
+    region: "Metropolitan",
+    postalCode: "8920102",
+    streetAddress: "Avenida Lazo 1252",
     avatar_image_path: "address_image.svg",
-    location_map_link: "https://maps.app.goo.gl/NvYZqa34Wye4tpS17",
+    location_map_link: "https://maps.app.goo.gl/o2DTJZKTwiAkyPAy7",
   },
-  phoneSection: {
-    title: "",
-    subtitle: "",
-  },
+  phoneSection: [
+    {
+      title: "WhatsApp",
+      subtitle: "+56 9 2950 8025",
+    },
+    {
+      title: "Telegram",
+      subtitle: "@superFelipeM",
+    },
+  ],
 };
 
 export {

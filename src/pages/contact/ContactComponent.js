@@ -45,11 +45,7 @@ class Contact extends Component {
                 </p>
                 <SocialMedia theme={theme} />
                 <div className="resume-btn-div">
-                  <Button
-                    text="See My Resume"
-                    href="/resume"
-                    theme={theme}
-                  />
+                  <Button text="See My Resume" href="/resume" theme={theme} />
                 </div>
               </div>
             </div>
@@ -106,18 +102,25 @@ class Contact extends Component {
                 >
                   {addressSection["subtitle"]}
                 </p>
-                <h1
-                  className="address-heading-text"
-                  style={{ color: theme.text }}
-                >
-                  {phoneSection["title"]}
-                </h1>
-                <p
-                  className="contact-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {phoneSection["subtitle"]}
-                </p>
+                {phoneSection.map((phoneData, index) => {
+                  return (
+                    <>
+                      <h1
+                        className="address-heading-text"
+                        style={{ color: theme.text }}
+                      >
+                        {phoneData["title"]}
+                      </h1>
+                      <p
+                        className="contact-header-detail-text subTitle"
+                        style={{ color: theme.secondaryText }}
+                      >
+                        {phoneData["subtitle"]}
+                      </p>
+                    </>
+                  );
+                })}
+
                 <div className="address-btn-div">
                   <Button
                     text="Visit on Google Maps"

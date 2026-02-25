@@ -63,12 +63,6 @@ export default class Main extends Component {
             )}
           />
           <Route
-            path="/opensource"
-            render={(props) => (
-              <Opensource {...props} theme={this.props.theme} />
-            )}
-          />
-          <Route
             path="/contact"
             render={(props) => <Contact {...props} theme={this.props.theme} />}
           />
@@ -86,7 +80,9 @@ export default class Main extends Component {
           />
           <Route
             path="/resume"
-            render={(props) => <ResumePage {...props} theme={this.props.theme} />}
+            render={(props) => (
+              <ResumePage {...props} theme={this.props.theme} />
+            )}
           />
           <Route
             path="*"
